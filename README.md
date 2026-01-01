@@ -23,4 +23,4 @@ chmod +x install.sh
 
 
 
-This fix was originally for the Omnibook Flip, but shoulkd apply for all laptops facing similar issues.
+This fix was originally for the Omnibook Flip, but should apply for all laptops facing similar issues.
