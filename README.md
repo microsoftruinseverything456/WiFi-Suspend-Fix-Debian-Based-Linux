@@ -15,3 +15,8 @@ active
 /usr/bin/systemctl  
 /usr/sbin/ip  
 /usr/sbin/modprobe
+
+To use, make sure all scripts are in the same folder, then run install.sh. This can be done by right clicking the install script, and running it as a program under the drop down. If this option doesn't appear, go to properties in the same drop down and select "Executable as program". Alternatively, you could right click the empty space in the directory that contains the scripts, select "Open in terminal", and run the following commands:
+
+chmod +x install.sh  
+./install.sh
