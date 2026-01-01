@@ -7,7 +7,7 @@ This requires an OS that uses systemd and NetworkManager, which is the vast majo
 systemctl is-active NetworkManager  
 command -v nmcli journalctl systemctl ip modprobe
 
-You should recieve an output like this is your distro is supported:
+You should recieve an output like this if your distro is supported:
 
 active  
 /usr/bin/nmcli  
