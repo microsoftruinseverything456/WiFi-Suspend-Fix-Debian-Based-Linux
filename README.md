@@ -4,20 +4,14 @@ This fix has been generalized towards any WiFi card drivers, including auto-dete
 
 This requires an OS that uses systemd and NetworkManager, which is the vast majority of major Linux distributions. Although it was created primarily for Zorin OS, distros such as Ubuntu and Mint should also be supported. To test if this fix would work for you, run the following command:
 
-systemctl is-active NetworkManager
-
+systemctl is-active NetworkManager  
 command -v nmcli journalctl systemctl ip modprobe
 
 You should recieve an output like this is your distro is supported:
 
-active
-
-/usr/bin/nmcli
-
-/usr/bin/journalctl
-
-/usr/bin/systemctl
-
-/usr/sbin/ip
-
+active  
+/usr/bin/nmcli  
+/usr/bin/journalctl  
+/usr/bin/systemctl  
+/usr/sbin/ip  
 /usr/sbin/modprobe
