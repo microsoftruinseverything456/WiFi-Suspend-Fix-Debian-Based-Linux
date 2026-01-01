@@ -23,4 +23,4 @@ chmod +x install.sh
 
 
 
-This fix was originally for the Omnibook Flip with a MediaTek MT7922 WiFi Card.
+This fix was originally for the Omnibook Flip, but shoulkd apply for all laptops facing similar issues.
