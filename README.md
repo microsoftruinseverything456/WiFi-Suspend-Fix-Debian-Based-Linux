@@ -10,8 +10,13 @@ command -v nmcli journalctl systemctl ip modprobe
 You should recieve an output like this is your distro is supported:
 
 active
+
 /usr/bin/nmcli
+
 /usr/bin/journalctl
+
 /usr/bin/systemctl
+
 /usr/sbin/ip
+
 /usr/sbin/modprobe
