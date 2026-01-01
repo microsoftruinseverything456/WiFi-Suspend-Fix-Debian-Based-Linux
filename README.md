@@ -20,3 +20,7 @@ To use, make sure all scripts are in the same folder, then run install.sh. This 
 
 chmod +x install.sh  
 ./install.sh
+
+
+
+This fix was originally for the Omnibook Flip with a MediaTek MT7922 WiFi Card.
