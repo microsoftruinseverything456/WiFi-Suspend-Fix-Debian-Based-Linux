@@ -1,4 +1,4 @@
-Fixes issues where WiFi network discovery fails after the system was suspended. Creates a system service to run at boot and reset the WiFi with each wake. Also restricts some WiFi power saving options to prevent WiFi drops when in use. It will cause a short delay in connection after the system wakes from suspending, but that is far better than the WiFi dying altogether. Version 1.2 significantly improves reconnection times.
+Fixes issues where WiFi network discovery fails after the system was suspended. Creates a system service to run at boot and reset the WiFi with each wake. Also restricts some WiFi power saving options to prevent WiFi drops when in use. Version 1.2 significantly improves reconnection times to nearly equivalent speeds as normal.
 
 This fix has been generalized towards any WiFi card drivers, including auto-detection for the drivers in use. However, this was created originally to resolve issues with the MediaTek MT7922 WiFi card.
 
