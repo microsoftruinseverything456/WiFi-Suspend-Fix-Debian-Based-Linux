@@ -82,28 +82,28 @@ reset_wifi() {
   set +e
 
   if have nmcli; then
-    nmcli radio wifi off; sleep 2
-    nmcli radio wifi on;  sleep 2
+    nmcli radio wifi off; 
+    nmcli radio wifi on;  
   fi
 
   local iface
   iface="$(get_wifi_iface 2>/dev/null || true)"
   if [ -n "${iface:-}" ] && have ip; then
     log "Wi-Fi iface: $iface"
-    ip link set "$iface" down; sleep 1
-    ip link set "$iface" up;   sleep 2
+    ip link set "$iface" down; 
+    ip link set "$iface" up;   
   fi
 
   local mod
   mod="$(get_wifi_driver_module 2>/dev/null || true)"
   if [ -n "${mod:-}" ] && have modprobe; then
     log "Wi-Fi module: $mod (reload)"
-    modprobe -r "$mod"; sleep 2
-    modprobe "$mod";    sleep 2
+    modprobe -r "$mod"; 
+    modprobe "$mod";    
   fi
 
   if have systemctl; then
-    systemctl restart "$NM_SERVICE"; sleep 2
+    systemctl restart "$NM_SERVICE"; 
   fi
 
   set -e 2>/dev/null || true
@@ -129,7 +129,7 @@ watch_resume_forever() {
     # If coproc failed, retry
     if [ -z "${DBUSMON_PID:-}" ]; then
       log "WARNING: dbus-monitor failed to start; retrying in 2s"
-      sleep 2
+      
       continue
     fi
 
@@ -152,7 +152,7 @@ watch_resume_forever() {
     # If we got here, dbus-monitor died. Restart it.
     log "WARNING: dbus-monitor exited; restarting watcher in 2s"
     kill "${DBUSMON_PID:-0}" 2>/dev/null || true
-    sleep 2
+    
   done
 }
 
