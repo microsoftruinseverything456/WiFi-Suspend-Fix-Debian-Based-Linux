@@ -1,4 +1,5 @@
-Update:
+Update:  
+
 I ultimately resolved this by replacing the WiFi card in my Omnibook. I forgot to have my uninstall script reset the wifi.powersave line. If you decide to do the same and want to change it back to normal type the following into your terminal:
 
 sudo nano /etc/NetworkManager/conf.d/wifi-powersave.conf
