@@ -8,7 +8,7 @@ Arrow down to "wifi.powersave=2", and change it to a 3.
 
 Ctrl + o then press enter to save, ctrl + x to exit.
 
-If you have an AMD laptop, I would highly recommend this card as a replacement: https://www.amazon.com/EDUP-Wireless-Bluetooth-Tri-Band-Compatible/dp/B0FZJQF4DW
+If you have an AMD laptop, I would highly recommend this card as a replacement. It still disconnects randomly on rare occasion (~once a day, on a busy day), but the WiFi never fully breaks (connection restores pretty quickly), and it supports WiFi 7: https://www.amazon.com/EDUP-Wireless-Bluetooth-Tri-Band-Compatible/dp/B0FZJQF4DW
 
 Please do research and acquire the right tools (an iFixit set for example) before attempting the same. However, with the proper research and tools, this only took about 15 minutes, upgraded my WiFi, and ended the issues.
 
