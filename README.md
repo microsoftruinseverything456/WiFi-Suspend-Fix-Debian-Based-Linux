@@ -1,5 +1,7 @@
 Update:  
 
+WARNING TO VPN USERS! This script may lead to buggy VPN connections. I discovered an IP leak even after uninstalling. This was fixed by uninstalling and reinstalling my VPN. I cannot prove that this script was the definitive cause, but after much searching, it seems the most likely candidate.
+
 I ultimately resolved this by replacing the WiFi card in my Omnibook. I forgot to have my uninstall script reset the wifi.powersave line. If you decide to do the same and want to change it back to normal type the following into your terminal:
 
 sudo nano /etc/NetworkManager/conf.d/wifi-powersave.conf
